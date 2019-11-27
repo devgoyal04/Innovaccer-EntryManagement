@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    
+    <div class="container">
+        {% if messages %}
+            {% for message in messages %}
+                <div class="alert alert-{{message.tags}}" id="msg" role="alert" style="position: absolute;">
+                    {{message}}
+                </div>
+            {% endfor %}
+        {% endif %}
+        <div class="row">
+            <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+                <div class="card card-signin my-5">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Check In</h5>
+                    <form method='POST' class="form-signin" id="checkin-form"> {% csrf_token %}
+                        <label>Visitor details</label>
+                        <div class="form-label-group">
+                            {{ form.visitorName }}
+                            {{form.visitorName.errors}}
+                            <label for="visitorName">Name</label>
+                        </div>
+
+                        <div class="form-label-group">
+                            {{ form.visitorEmail }}
+                            {{ form.visitorEmail.errors }}
+                            <label for="visitorEmail">Email Address</label>
+                        </div>
+
+                        <div class="form-label-group">
+                            {{ form.visitorContactNo }}
+                            {{ form.visitorContactNo.errors }}
+                            <label for="visitorContactNo">Phone No</label>
+                        </div>
+                        <hr class="my-4">
+                        <label>Host details</label>
+                        <div class="form-label-group">
+                            {{ form.hostName }}
+                            {{ form.hostName.errors }}
+                            <label for="hostName">Name</label>
+                        </div>
+
+                        <div class="form-label-group">
+                            {{ form.hostEmail }}
+                            {{ form.hostEmail.errors }}
+                            <label for="hostEmail">Email address</label>
+                        </div>
+
+                        <div class="form-label-group">
+                            {{ form.hostContactNo }}
+                            {{ form.hostContactNo.errors }}
+                            <label for="hostContactNo">Phone No</label>
+                        </div>
+
+                        <a class="btn btn-lg btn-primary text-uppercase" style="margin-right:3%;" href="{% url 'details:home' %}">Back</a>
+                        <button class="btn btn-lg btn-primary text-uppercase" style="margin-left:3%;" type="submit">Check In</button>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
+

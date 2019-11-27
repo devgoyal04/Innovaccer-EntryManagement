@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+                <div class="card card-signin my-5">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Check Out</h5>
+                    <form class="form-signin" method='POST'> {% csrf_token %} 
+                        <div class="form-label-group">
+                            {{ form.visitorEmail }}
+                            {{ form.visitorEmail.errors }}
+                            <label>Email address</label>
+                        </div>  
+
+                        <a class="btn btn-lg btn-primary text-uppercase" style="margin-right:3%;" href="{% url 'details:home' %}">Back</a>
+                        <button class="btn btn-lg btn-primary text-uppercase" style="margin-left:3%;" type="submit">Check Out</button>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
+
