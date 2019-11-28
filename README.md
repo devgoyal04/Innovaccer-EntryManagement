@@ -7,7 +7,7 @@ This application is built on Python Django framework which captures the details 
 5. Host name
 6. Address visited. 
 
-The Project is hosted on pythonanywhere here [devgoyal04.pythonanywhere.com](devgoyal04.pythonanywhere.com)
+* **The Project is hosted on pythonanywhere at** [devgoyal04.pythonanywhere.com](https://devgoyal04.pythonanywhere.com)
 
 ## Getting Started
 1. Clone the repository using ```git clone```
@@ -63,7 +63,4 @@ The local server will be up, browse to [localhost:8000](http://localhost:8000) t
 
 ## Screenshots
 Screenshots of Host/Visitor Emails and SMS are in Screenshots folder
-
-## Author
-**Dev Goyal**
 
