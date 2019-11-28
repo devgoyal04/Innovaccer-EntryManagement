@@ -123,9 +123,9 @@ STATIC_URL = '/static/'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'your email'
+EMAIL_HOST_USER = 'youremail@gmail.com'
 EMAIL_HOST_PASSWORD = '*********'
 EMAIL_USE_TLS = True
-#enter your gmail account id and password in above fields to recieve sms
+#enter your gmail account id and password in above fields to recieve mail
 
 AUTH_TOKEN = 'MxSi2Z6PbFfzcLkvJHAw5Yr0g1I4CnRTQetKyh3GlU7j8DmBdVAOY0c9xMNyFq1UfHndESB85IwjXtRg'
