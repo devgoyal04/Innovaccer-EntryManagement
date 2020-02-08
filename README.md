@@ -1,5 +1,5 @@
 # Entry-Management Software
-This application is built on Python Django framework which captures the details the of visitor and host on the front-end and at the back-end once the user enters the information in the form, the back-end stores all of the information with also the time stamp of the entry. Which also triggers E-Mail and SMS to the host informing him of the details of the visitor. Fast2sms and smtp server is used to send SMS and E-Mail respectively. And, when the user checks-out he should get an E-Mail with the complete form which includes.
+This application is built on Python Django framework which captures the details of the visitor and host on the front-end and at the back-end once the user enters the information in the form, the back-end stores all of the information with also the time stamp of the entry. Which also triggers E-Mail and SMS to the host informing him of the details of the visitor. Fast2sms and smtp server is used to send SMS and E-Mail respectively. And, when the user checks-out he should get an E-Mail with the complete form which includes.
 1. Name
 2. Phone
 3. Check-in time
